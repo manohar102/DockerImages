@@ -2,6 +2,7 @@ FROM centos:7
 
 WORKDIR /opt
 
+RUN yum install -y wget curl
 RUN sudo yum install -y https://cdn.azul.com/zulu/bin/zulu-repo-1.0.0-1.noarch.rpm
 RUN sudo yum install zulu11-jdk
 
